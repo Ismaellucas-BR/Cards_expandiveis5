@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="/CSS/index.css">
+    <!--Link JS-->
+    <script defer src="JS/index.js"></script>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="IMG/slider.png" type="image/x-icon">
+    <title>Cards expandiveis</title>
+</head>
+<body>
+    <div class="container">
+        <div class="panel active">
+            <img class="mover" id="imge" onmouseover="outside2()" src="IMG/mesmerizing-shot-of-ponta-da-piedade.jpg" alt="">
+            <div class="titvi">
+                <h3>Explore o mundo</h3>
+                <!--<img src="IMG/eye-outline.svg" alt="">-->
+                <a href="/IMG/mesmerizing-shot-of-ponta-da-piedade.jpg" target="_blank" rel="noopener noreferrer">
+                    <ion-icon class="icon" id="changeName" onmouseover="inside()" onmouseout="outside()" name="eye-off-outline"></ion-icon>
+                </a>
+            </div>
+            
+        </div>
+        <div class="panel" style="background-image: url(IMG/breathtaking-shot-of-vasco-da-gama-bridge-at-sunrise-in-lisbon-portugal.jpg);">
+            <h3>Explore o mundo</h3>
+        </div>
+        <div class="panel" style="background-image: url(IMG/mount-fuji-at-lake-kawaguchiko-sunrise-vintage.jpg);">
+            <h3>Explore o mundo</h3>
+        </div>
+        <div class="panel" style="background-image: url(IMG/new-york-city-skyline-with-skyscrapers-at-sunset.jpg);">
+            <h3>Explore o mundo</h3>
+        </div>
+        <div class="panel" style="background-image: url(IMG/sunset-seen-from-ribeira-beach-in-salvador-bahia-brazil-a-boat-sails-at-sea.jpg);">
+            <h3>Explore o mundo</h3>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

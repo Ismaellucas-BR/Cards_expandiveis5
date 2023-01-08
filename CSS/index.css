@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+    /*padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0*/
+}
+body{
+    background-image:linear-gradient(to right,rgb(107, 5, 117),black);
+    background-size: cover;
+    font-family: 'Muli',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    display: flex;
+    width: 80vw;
+}
+.mover:hover{
+    transform: translateY(-2560px);
+    transition: 15s ease-in 0.4s;
+    animation: moveToRight;
+}
+@keyframes moveToRight {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-2560px);
+    }
+    100% {
+        transform: translateY(0px);
+        transition: 0.5s ease-out;
+      }
+  }
+.panel{
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex:0.5; /*Estudar*/
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    overflow: hidden;
+    display: block;
+}
+.panel h3{
+    font-size:24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    padding:0 0 2% 2% ;
+    text-shadow: 2px 2px 2px black;
+}
+.panel.active{
+    flex:5;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+a h3{
+    color: white;
+    bottom: 150%;
+}
+a{
+    color: white;
+}
+.titvi{
+    display: flex;
+    width: 100vw;
+}
+.titvi icon{
+    top: 1%;
+    height: 10vh;
+    position: absolute;
+}
+.icon{
+    z-index: 4;
+    position: absolute;
+    top: 87%;
+    left: 31%;
+    font-size: 35px;
+    background-color: blueviolet;
+    border-radius: 40px;
+    padding: 0.5%;
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.71);
+}
+
+@media(max-width: 749px){
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4), /*Estudar*/
+    .panel:nth-of-type(5){
+        display: none;
+    }
+    .icon{
+        z-index: 4;
+        position: absolute;
+        top: 80%;
+        left: 11%;
+        font-size: 35px;
+        background-color: blueviolet;
+        border-radius: 40px;
+        padding: 0.5%;
+        box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.71);
+    }
+}
+@media (min-width:750px) and (max-width: 999px){
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4), /*Estudar*/
+    .panel:nth-of-type(5){
+        display: none;
+    }
+    .icon{
+        z-index: 4;
+        position: absolute;
+        top: 77%;
+        left: 5%;
+        font-size: 35px;
+        background-color: blueviolet;
+        border-radius: 40px;
+        padding: 0.5%;
+        box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.71);
+    }
+}
